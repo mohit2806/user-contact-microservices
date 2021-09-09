@@ -10,7 +10,7 @@ services:
     networks:
       - ms-network-demo
   user-service:
-    build: ./user-service
+    image: manmohitarya/user-service
     ports:
       - 9001:9001
     container_name: user-service
@@ -20,7 +20,7 @@ services:
     networks:
       - ms-network-demo
   contact-service:
-    build: ./contact-service
+    image: manmohitarya/contact-service
     ports:
       - 9002:9002
     container_name: contact-service
@@ -30,7 +30,7 @@ services:
     networks:
       - ms-network-demo
   api-gateway:
-    build: ./api-gateway
+    image: manmohitarya/api-gateway
     ports:
       - 9005:9005
     container_name: api-gateway
